@@ -1,0 +1,24 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.calculator-grid > button {
+  cursor: pointer;
+  font-size: 2rem;
+  border: 1px solid white;
+  outline: none;
+  background-color: rgba(255, 255, 255, 0.7);
+  transition: background-color 0.2s;
+}
+
+.calculator-grid > button:hover {
+  background-color: rgba(255, 255, 255, 0.9);
+}
+.calculator-grid > button:active {
+  background-color: rgba(255, 255, 255, 0.3);
+}
+
+.output {
+  word-wrap: break-word;
+  word-break: break-all;
+}

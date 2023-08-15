@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="../dist/output.css" rel="stylesheet" />
+    <title>Calculator</title>
+    <script defer src="app.js"></script>
+  </head>
+  <body class="bg-gradient-to-tr from-violet-300 to-fuchsia-800">
+    <div
+      class="calculator-grid font-normal grid content-center min-h-screen justify-center grid-cols-[repeat(4,100px)] grid-rows-[minmax(120px,auto)_repeat(5,100px)] gap-2"
+    >
+      <div
+        class="output col-span-4 bg-black flex flex-col items-end justify-between p-10"
+      >
+        <div class="previous-number text-yellow-50 text-sm"></div>
+        <div class="current-number text-slate-200 font-bold text-2xl"></div>
+      </div>
+      <button
+        aria-colspan="all-clear-btn"
+        data-clear
+        class="span-two col-span-2 all-clear-btn"
+      >
+        AC
+      </button>
+      <button class="del-btn" data-delete>DEL</button>
+      <button class="text-red-500 font-extrabold operation-btn">/</button>
+      <button class="num-btn" data-number>1</button>
+      <button class="num-btn" data-number>2</button>
+      <button class="num-btn" data-number>3</button>
+      <button class="text-red-500 font-extrabold operation-btn">*</button>
+      <button class="num-btn" data-number>4</button>
+      <button class="num-btn" data-number>5</button>
+      <button class="num-btn" data-number>6</button>
+      <button class="text-red-500 font-extrabold operation-btn">+</button>
+      <button class="num-btn" data-number>7</button>
+      <button class="num-btn" data-number>8</button>
+      <button class="num-btn" data-number>9</button>
+      <button class="text-red-500 font-extrabold operation-btn">-</button>
+      <button class="num-btn" data-number>.</button>
+      <button class="num-btn" data-number>0</button>
+      <button data-equal class="text-green-600 col-span-2 equal-btn">=</button>
+    </div>
+  </body>
+</html>
